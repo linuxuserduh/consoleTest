@@ -6,7 +6,15 @@ int patk;
 int eatk;
 
 Console.WriteLine("Attributes:\nHealth = " + Status.hp + $"\nAttack = {Status.atk[0]}-{Status.atk[1]}" + "\nDefence = " + Status.def);
-Console.ReadKey();
+
+try
+{
+	Console.ReadKey();
+}
+catch (Exception ex)
+{
+	Console.WriteLine(ex.Message);
+}
 
 while(true)
 {
