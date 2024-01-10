@@ -21,7 +21,7 @@ while(true)
 	patk = rnd.Next(Status.atk[1]);
 	eatk = rnd.Next(monster.atk[1]);
 	monster.hp -= patk;
-	Status.hp -= eatk - Status.def;
+	Status.hp -= eatk;
 
 	Console.WriteLine("The enemy has taken -" + patk + "damage.\nEnemy's HP left: " + monster.hp);
 	Console.ReadKey();
